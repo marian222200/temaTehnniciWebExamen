@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+        La Marianno
+</title>
+<link rel="icon" type="image/png" href="icons/favicon.ico">
+<link rel="stylesheet" type="text/css" href="styles/frontpage_style.css">
+</head>
+<body>
+    <h1>Pizzeria La Marianno</h1>
+    <div class="meniu_principal">
+        <button class="buton_principal" id="afisare_login">Login</button>
+        <button class="buton_principal" id="afisare_register">Register</button>
+        <button class="buton_principal" id="afisare_loguot">Logout</button>
+        <button class="buton_principal" id="afisare_cos_cumparaturi">Cos cumparaturi</button>
+        <button class="buton_principal" id="afisare_add_pizza">Add a pizza</button>
+        <button class="buton_principal" id="afisare_info">Info logare</button>
+        <button class="buton_principal" id="afisare_info">Light theme</button>
+    </div>
+    <div class="formular" id="formular_login" style="display: none">
+        <h2> Login to your account</h2>
+        <span class="label">email:</span><input type="email" id="login_email"></input>
+        <span class="label">password:</span><input type="password" id="login_pass"></input>
+        <span class="greseala" style="display: none" id="greseala_login">Email sau parola incorecte! Incercari ramase:</span>
+        <button class="buton_formular" id="login_submit">Login</button>
+    </div>
+    <div class="formular" id="formular_register_account" style="display: none">
+        <h2> Create a new account</h2>
+        <span class="label">first name:</span><input type="text" id="register_fname"></input>
+        <span class="label">last name:</span><input type="text" id="register_lname"></input>
+        <span class="label">email*:</span><input type="email" id="register_email"></input></input><span class="greseala" style="display: none">Email nevalid!</span>
+        <span class="label">password*:</span><input type="password" id="register_password"></input><span class="greseala" style="display: none">Parola trebuie sa aibe macar 8 caractere, 1 litera mare, 1 mica, 1cifra si 1 caracter special in interiorul ei!</span>
+        <span class="label">adress:</span><input type="text" id="register_adress"></input>
+        <span class="label">*necesar</span>
+        <button class="buton_formular" id="register_submit">Register account</button>
+    </div>
+    <div class="formular" id="formular_cumparaturi" style="display: none">
+        <h2>Your cart</h2>
+        <cos>
+            <h3>numar de pizza pana acum: </h3>
+            <h3 id="numar_pizza">20</h3>
+        </cos>
+        <button class="buton_formular" id="order_submit">Finish order</button>
+    </div>
+    <div class="formular" id="formular_adauga" style="display: none">
+        <h2>Add a pizza</h2>
+        <span class="label">nume pizza:</span><input type="text" id="add_name"></input>
+        <span class="label">ingrediente:</span><input type="text" id="add_ingrediente"></input>
+        <span class="label">pret pizza:</span><input type="text" id="add_pret"></input>
+        <span class="label">URL img pizza:</span><input type="text" id="add_img"></input>
+        <span class="label">amount:</span><input type="text" id="add_amount"></input>
+        <button class="buton_formular" id="add_submit">Add pizza</button>
+    </div>
+    <div class="formular" id="formular_info_logari" style="display:none">
+        <h2>Informatii logari trecute</h2>
+        <span class="label">Nu te-ai logat inca!</span>
+    </div>
+    <h2>Catalog Pizza</h2>
+    <h4>Page</h4>
+    <div class="pagination">
+        <button class="buton_pagina">1</button>
+        <button class="buton_pagina">2</button>
+        <button class="buton_pagina">3</button>
+        <button class="buton_pagina">4</button>
+    </div>
+    <div id="lista_pizza">
+        <!--
+        <div class="item">
+            <h3>Nume: Margherita</h3>
+            <h3>Ingrediente: aluat, sos_de_rosii, mozzarella</h3>
+            <h3>Pret: 20lei</h3>
+            <img src="images/margherita.jpg" alt="imagine_pizza">
+            <br />
+            <div class="menu_cumparare">
+                <span>Ramase in stoc:<span>
+                <stoc>4</stoc>
+                <button class="buton_formular">Cumpara</button>
+            </div>
+        </div>
+        -->
+    </div>
+    <script src="scripts/myscripts.js"></script>
+</body>
+</html>
